@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+      /* Menempatkan grid di bagian bawah halaman */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  min-height: calc(100% - 200px); /* Sesuaikan tinggi ini */
+}
+
+#grid-container {
+  margin-top: auto;
+  padding-bottom: 0;
+  border-top: 2px solid #000; /* Jika ingin ada garis di atas grid */
+}
+
+/* Menampilkan garis kotak di sekitar kolom */
+.box1 {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+  height: 150px;
+  background-image: url(https://cdn.paradisotour.co.id/wp-content/uploads/2024/02/karimun-jawa.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: fantasy; color: lightgoldenrodyellow; text-shadow: 5px 5px 5px black;
+}
+
+.box2 {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+  height: 150px;
+  background-image: url(https://visitjawatengah.jatengprov.go.id/assets/images/a52ee53e-74db-4c82-b5e5-2af2db6f32d5.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: fantasy; color: lightgoldenrodyellow; text-shadow: 5px 5px 5px black;
+}
+
+.box3 {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+  height: 150px;
+  background-image: url(https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/951/2023/12/24/-1395875691.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: fantasy; color: lightgoldenrodyellow; text-shadow: 5px 5px 5px black;
+}
+
+.box4 {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+  height: 150px;
+  background-image: url(https://cdn.idntimes.com/content-images/community/2021/12/fromandroid-7cd61e7cb3dff02b73e5850746427cf4.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: fantasy; color: lightgoldenrodyellow; text-shadow: 5px 5px 5px black;
+}
+
+/* Membuat konten selalu memenuhi layar, dan grid di bagian bawah */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fluid {
+  margin-top: auto; /* Mendorong grid ke bawah */
+}
+
+#main-content {
+  flex: 1;
+  text-align: center; color: white; padding: 250px; text-shadow: 3px 3px 5px black;
+  background-image: url(https://rencanamu.id/assets/file_uploaded/blog/1545284360-holiday-10.png);
+  background-size: cover;
+  background-position: center;
+}
+    </style>
+
+    <title>Company Profile</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: grey;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="aboutus.html">About US</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Come Buy Ticket</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark" style="background-color: lightgray;" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!--Main Content-->
+<div class="container-fluid" id="main-content">
+<h1 style="font-family: monospace; font-size: 50px;">Mau Liburan Tapi Bingung Gak Ada Kendaraan?</h1>
+<h2 style="font-family: monospace;">Tenang Kali ini ada yang namanya cuss go!! </h2>
+<h3 style="font-family: monospace;">Tinggal pilih tanggal nya, gak perlu antri tiket</h3>
+  
+</div>
+
+<!-- kolom Bawah-->
+  <div class="container-fluid" id="grid-container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+    <div class="col box1">KARIMUN?</div>
+    <div class="col box2">CURUG?</div>
+    <div class="col box3">KAWAH PUTIH?</div>
+    <div class="col box4">SITU PATENGAN?</div>
+  </div>
+</div>
+  </body>
+</html>
